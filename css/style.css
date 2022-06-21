@@ -1,0 +1,315 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0px auto;
+  overflow: auto;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+body {
+  overflow: auto;
+}
+
+header > nav > span > img {
+  padding: 1% 50%;
+  float: left;
+}
+
+header > nav > section {
+  padding: 1.5% 10% 1.5% 15%;
+}
+
+nav > ul,
+nav > span,
+nav > section {
+  width: 33.33%;
+  text-transform: uppercase;
+  float: left;
+  overflow: visible;
+}
+
+nav > section > .donate {
+  background-color: #eff1f2;
+  color: #67778a;
+  border-radius: 4%;
+  border: 1px transparent solid;
+  padding: 8% 10% 5% 10%;
+}
+
+nav > ul > li {
+  float: left;
+  padding: 5%;
+}
+
+.grit,
+header {
+  background-color: #67778a;
+  color: #eff1f2;
+  border: transparent 1px solid;
+}
+
+.why,
+.volunteer {
+  color: #1a232e;
+  background-color: #eff1f2;
+}
+
+.visit {
+  color: #1a232e;
+  background-color: #dadee1;
+}
+
+.visit-buttons {
+  text-align: center;
+  border: #1a232e 1px solid;
+  padding: 1%;
+  margin: 0 0 0 35%;
+  font-size: 0.5em;
+}
+
+footer {
+  color: #eff1f2;
+  background-color: #1a232e;
+}
+
+footer > section > section > span {
+  text-transform: uppercase;
+  overflow: visible;
+}
+
+footer > section > section > a > i {
+  overflow: visible;
+}
+
+footer > img {
+  overflow: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+.address > span {
+  text-transform: uppercase;
+}
+
+.main-section {
+  font-size: 2em;
+}
+
+.visit > section > h3 {
+  font-size: 1em;
+}
+
+.visit > section > p {
+  font-size: 0.6em;
+  padding: 2% 0;
+}
+
+li,
+a,
+a:link {
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+}
+
+i {
+  color: inherit;
+}
+
+.grit {
+  background-image: url(/class10-materials/layout-4-level-ground/images/full-8677-56541-david_goggins_log_lift_h.jpg);
+  background-size: cover;
+  text-shadow: -1px -1px 0 #1a232e, 1px -1px 0 #1a232e, -1px 1px 0 #1a232e,
+    1px 1px 0 #1a232e;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 10vh;
+}
+.main-section,
+header,
+footer {
+  width: 100%;
+}
+
+.main-section {
+  height: 100vh;
+  display: block;
+  text-align: center;
+}
+footer > section {
+  width: 30%;
+}
+footer > section > span {
+  width: 100%;
+}
+
+.visit > section {
+  width: 50%;
+  float: left;
+}
+
+.visit > section > h3 {
+  padding: 5%;
+}
+.visit > section > {
+  padding: 5%;
+}
+
+section > img {
+  width: auto;
+  height: 8em;
+  object-fit: cover;
+  padding: 15% 0 0 0;
+}
+
+section > i,
+section > section > a {
+  width: 33%;
+  float: left;
+  padding: 15%;
+  overflow: visible;
+}
+
+.address {
+  padding: 5%;
+  width: 25%;
+  float: right;
+}
+
+.footer-nav {
+  float: left;
+  width: 20%;
+  padding: 2% 2%;
+}
+
+hr {
+  clear: both;
+  width: 95%;
+}
+
+h1 {
+  padding: 2.5% 0 0 0;
+}
+
+h2,
+h3 {
+  padding: 15% 0 0 0;
+}
+p {
+  width: 90%;
+  padding: 5%;
+  text-align: center;
+  overflow: auto;
+}
+
+footer > span {
+  height: 1em;
+  color: #67778a;
+}
+
+footer > span > img {
+  float: right;
+}
+
+footer > section > section {
+  padding: 5% 0;
+}
+
+footer > section > section > span {
+  color: #67778a;
+}
+
+.tax {
+  float: left;
+  background-color: #1a232e;
+  width: 90%;
+}
+
+footer > img {
+  width: 10%;
+  height: 5em;
+  padding: 2%;
+  float: right;
+  background-color: #1a232e;
+}
+
+.social,
+.address {
+  overflow-x: hidden;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media (max-width: 1024px) {
+  main > .visit > section {
+    width: 100%;
+    float: none;
+  }
+
+  .visit {
+    height: 200vh;
+  }
+
+  .visit > section {
+    padding: 15%;
+  }
+
+  .address {
+    width: 50%;
+    padding: 10% 0 0 0;
+  }
+
+  .footer-nav {
+    width: 30%;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 1.2em;
+  }
+
+  h1 {
+    padding: 30% 0 0 0;
+  }
+  h2,
+  h3 {
+    padding: 50% 0 0 0;
+  }
+}
